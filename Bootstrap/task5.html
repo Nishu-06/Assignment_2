@@ -1,214 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>bsTask5</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <style>
-        table {
-            width: 50%;
-            background-color: rgb(229, 229, 229);
-            border-radius: 5px;
-        }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK-5</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-        th, td {
-            padding: 8px;
-        }
-
-        button[type="submit"] {
-            padding: 5px 0;
-            width: 30%;
-            font-weight: 400;
-            background-color: #f2ab43;
-            color: white;
-            cursor: pointer;
-            border: none;
-            border-radius: 5px;
-            box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
-        }
-
-        label {
-            font-weight: 700;
-        }
-
-        .radio--label {
-            font-weight: 400;
-        }
-    </style>
 </head>
+
 <body>
-    <form class="needs-validation" novalidate>
-        <center>
-            <table>
-                <tbody>
-                    <tr>
-                        <td><label for="fn">First Name</label></td>
-                        <td>
-                            <div class="input-group">
-                                <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-user"></i></span>
-                                <input type="text" class="form-control" placeholder="First name" aria-label="First name" aria-describedby="basic-addon1" id="fn" required>
-                                <div class="invalid-feedback">
-                                    Please supply your first name
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
+    <div class="container">
 
-                    <tr>
-                        <td><label for="ln">Last Name</label></td>
-                        <td>
-                            <div class="input-group">
-                                <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-user"></i></span>
-                                <input type="text" class="form-control" placeholder="Last Name" aria-label="Last Name" aria-describedby="basic-addon1" id="ln" required>
-                                <div class="invalid-feedback">
-                                    Please supply your last name
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
+        <form class="well form-horizontal" action=" " method="post" id="contact_form">
+            <fieldset>
+                <legend>Contact Us Today!</legend>
+                <div class="form-group">
+                    <label class="col-md-4 control-label">First Name</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input name="first_name" placeholder="First Name" class="form-control" type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Last Name</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input name="last_name" placeholder="Last Name" class="form-control" type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-4 control-label">E-Mail</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                            <input name="email" placeholder="E-Mail Address" class="form-control" type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Phone #</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                            <input name="phone" placeholder="(845)555-1212" class="form-control" type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Address</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                            <input name="address" placeholder="Address" class="form-control" type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-4 control-label">City</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                            <input name="city" placeholder="city" class="form-control" type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-4 control-label">State</label>
+                    <div class="col-md-4 selectContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                            <select name="state" class="form-control selectpicker">
+                                <option value=" ">Please select your state</option>
+                                <option>Alabama</option>
+                                <option>Alaska</option>
+                                <option>Arizona</option>
+                                <option>Arkansas</option>
+                                <option>California</option>
+                                <option>Colorado</option>
+                                <option>Connecticut</option>
+                                <option>Delaware</option>
+                                <option>District of Columbia</option>
+                                <option> Florida</option>
+                                <option>Georgia</option>
+                                <option>Hawaii</option>
+                                <option>daho</option>
+                                <option>Illinois</option>
+                                <option>Indiana</option>
+                                <option>Iowa</option>
+                                <option> Kansas</option>
+                                <option>Kentucky</option>
+                                <option>Louisiana</option>
+                                <option>Maine</option>
+                                <option>Maryland</option>
+                                <option> Mass</option>
+                                <option>Michigan</option>
+                                <option>Minnesota</option>
+                                <option>Mississippi</option>
+                                <option>Missouri</option>
+                                <option>Montana</option>
+                                <option>Nebraska</option>
+                                <option>Nevada</option>
+                                <option>New Hampshire</option>
+                                <option>New Jersey</option>
+                                <option>New Mexico</option>
+                                <option>New York</option>
+                                <option>North Carolina</option>
+                                <option>North Dakota</option>
+                                <option>Ohio</option>
+                                <option>Oklahoma</option>
+                                <option>Oregon</option>
+                                <option>Pennsylvania</option>
+                                <option>Rhode Island</option>
+                                <option>South Carolina</option>
+                                <option>South Dakota</option>
+                                <option>Tennessee</option>
+                                <option>Texas</option>
+                                <option> Uttah</option>
+                                <option>Vermont</option>
+                                <option>Virginia</option>
+                                <option>Washington</option>
+                                <option>West Virginia</option>
+                                <option>Wisconsin</option>
+                                <option>Wyoming</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Zip Code</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                            <input name="zip" placeholder="Zip Code" class="form-control" type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Website or domain name</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+                            <input name="website" placeholder="Website or domain name" class="form-control" type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Do you have hosting?</label>
+                    <div class="col-md-4">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="hosting" value="yes" /> Yes
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="hosting" value="no" /> No
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Project Description</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                            <textarea class="form-control" name="comment" placeholder="Project Description"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="alert alert-success" role="alert" id="success_message">Success <i
+                        class="glyphicon glyphicon-thumbs-up"></i>
+                    Thanks for contacting us, we will get back to you shortly.</div>
+                <div class="form-group">
+                    <label class="col-md-4 control-label"></label>
+                    <div class="col-md-4">
+                        <button type="submit" class="btn btn-warning">Send <span
+                                class="glyphicon glyphicon-send"></span></button>
+                    </div>
+                </div>
 
-                    <tr>
-                        <td><label for="email">E-Mail</label></td>
-                        <td>
-                            <div class="input-group">
-                                <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-envelope"></i></span>
-                                <input type="email" class="form-control" placeholder="E-Mail Address" aria-label="Email" aria-describedby="basic-addon1" id="email" required>
-                                <div class="invalid-feedback">
-                                    Please supply your email address
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
+            </fieldset>
+        </form>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/js/bootstrapValidator.min.js"></script>
 
-                    <tr>
-                        <td><label for="phone">Phone #</label></td>
-                        <td>
-                            <div class="input-group">
-                                <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-phone"></i></span>
-                                <input type="tel" class="form-control" placeholder="(845)555-1212" aria-label="Phone" aria-describedby="basic-addon1" id="phone" required>
-                                <div class="invalid-feedback">
-                                    Please supply your phone number
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td><label for="address">Address</label></td>
-                        <td>
-                            <div class="input-group">
-                                <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-house"></i></span>
-                                <input type="text" class="form-control" placeholder="Address" aria-label="Address" aria-describedby="basic-addon1" id="address" required>
-                                <div class="invalid-feedback">
-                                    Please supply your address
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td><label for="city">City</label></td>
-                        <td>
-                            <div class="input-group">
-                                <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-house"></i></span>
-                                <input type="text" class="form-control" placeholder="City" aria-label="City" aria-describedby="basic-addon1" id="city" required>
-                                <div class="invalid-feedback">
-                                    Please supply your city
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td><label for="state">State</label></td>
-                        <td>
-                            <div class="input-group">
-                                <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-list"></i></span>
-                                <select class="form-select" id="state" aria-label="Example select with button addon" required>
-                                    <option selected>Please select your state</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
-                                <div class="invalid-feedback">
-                                    Please select your state.
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td><label>Do you have hosting?</label></td>
-                        <td>
-                            <input class="form-check-input" type="radio" name="hosting" value="yes" required>
-                            <label for="yes" class="radio--label">Yes</label>
-                            <br>
-                            <input class="form-check-input" type="radio" name="hosting" value="no" required>
-                            <label for="no" class="radio--label">No</label>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td><label for="projectDescription">Project Description</label></td>
-                        <td>
-                            <div class="input-group">
-                                <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-pen"></i></span>
-                                <textarea id="projectDescription" class="form-control" rows="2" placeholder="Project Description" required></textarea>
-                                <div class="invalid-feedback">
-                                    Please provide a project description
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-
-                    <!-- Submit Button -->
-                    <tr>
-                        <td></td>
-                        <td colspan="1">
-                            <button type="submit"><span>Send </span><i class="fa-solid fa-paper-plane"></i></button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </center>
-    </form>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script>
-        (function() {
-            'use strict';
-            window.addEventListener('load', function() {
-                var forms = document.getElementsByClassName('needs-validation');
-                Array.prototype.filter.call(forms, function(form) {
-                    form.addEventListener('submit', function(event) {
-                        if (form.checkValidity() === false) {
-                            event.preventDefault();
-                            event.stopPropagation();
+        $(document).ready(function () {
+            $('#contact_form').bootstrapValidator({
+                feedbackIcons: {
+                    valid: 'glyphicon glyphicon-ok',
+                    invalid: 'glyphicon glyphicon-remove',
+                    validating: 'glyphicon glyphicon-refresh'
+                },
+                fields: {
+                    first_name: {
+                        validators: {
+                            stringLength: {
+                                min: 2,
+                            },
+                            notEmpty: {
+                                message: 'Please supply your first name'
+                            }
                         }
-                        form.classList.add('was-validated');
-                    }, false);
-                });
-            }, false);
-        })();
-
-        const inputFields = document.querySelectorAll('.form-control:not(#projectDescription, #state, [type="radio"])');
-        inputFields.forEach((input) => {
-            input.addEventListener('input', () => {
-                const label = input.closest('tr').querySelector('label');
-                const span = input.closest('.input-group').querySelector('.input-group-text');
-                if (input.value.trim() === '') {
-                    input.classList.add('is-invalid');
-                    label.classList.add('text-danger'); // Add red color to label text
-                    span.classList.add('text-danger'); // Add red color to span (icon)
-                } else {
-                    input.classList.remove('is-invalid');
-                    label.classList.remove('text-danger'); // Remove red color from label text
-                    span.classList.remove('text-danger'); // Remove red color from span (icon)
+                    },
+                    last_name: {
+                        validators: {
+                            stringLength: {
+                                min: 2,
+                            },
+                            notEmpty: {
+                                message: 'Please supply your last name'
+                            }
+                        }
+                    },
+                    email: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Please supply your email address'
+                            },
+                            emailAddress: {
+                                message: 'Please supply a valid email address'
+                            }
+                        }
+                    },
+                    phone: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Please supply your phone number'
+                            },
+                            phone: {
+                                country: 'US',
+                                message: 'Please supply a vaild phone number with area code'
+                            }
+                        }
+                    },
+                    address: {
+                        validators: {
+                            stringLength: {
+                                min: 8,
+                            },
+                            notEmpty: {
+                                message: 'Please supply your street address'
+                            }
+                        }
+                    },
+                    city: {
+                        validators: {
+                            stringLength: {
+                                min: 4,
+                            },
+                            notEmpty: {
+                                message: 'Please supply your city'
+                            }
+                        }
+                    },
+                    state: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Please select your state'
+                            }
+                        }
+                    },
+                    zip: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Please supply your zip code'
+                            },
+                            zipCode: {
+                                country: 'US',
+                                message: 'Please supply a vaild zip code'
+                            }
+                        }
+                    },
+                    comment: {
+                        validators: {
+                            stringLength: {
+                                min: 10,
+                                max: 200,
+                                message: 'Please enter at least 10 characters and no more than 200'
+                            },
+                            notEmpty: {
+                                message: 'Please supply a description of your project'
+                            }
+                        }
+                    }
                 }
-            });
+            })
+                .on('success.form.bv', function (e) {
+                    $('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...
+                    $('#contact_form').data('bootstrapValidator').resetForm();
+                    e.preventDefault();
+                    var $form = $(e.target);
+                    var bv = $form.data('bootstrapValidator');
+                    $.post($form.attr('action'), $form.serialize(), function (result) {
+                        console.log(result);
+                    }, 'json');
+                });
         });
+
     </script>
 </body>
+
 </html>
